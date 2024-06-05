@@ -103,7 +103,7 @@
         }
 
         main {
-            padding: 2rem 0;
+            padding: 2rem;
         }
 
         section {
@@ -125,7 +125,6 @@
             line-height: 1.5;
         }
 
-        /* Execution Page Specific Styles */
         .input-container {
             display: flex;
             flex-direction: column;
@@ -243,13 +242,21 @@
             </div>
         </header>
         <main>
+            <!-- Welcome Section -->
+            <section id="welcome">
+                <h2>Welcome to PantherHub</h2>
+                <p>PantherHub is a Roblox executor that brings you fun and better features!</p>
+            </section>
+
             <!-- Execution Section -->
             <section id="execution">
                 <h2>Execution Page</h2>
                 <div class="input-container">
                     <textarea id="codeInput" placeholder="Enter your code here..."></textarea>
-                    <button class="execute" onclick="executeCode()">Execute</button>
-                    <button class="clear" onclick="clearCode()">Clear</button>
+                    <div>
+                        <button class="execute" onclick="executeCode()">Execute</button>
+                        <button class="clear" onclick="clearCode()">Clear</button>
+                    </div>
                 </div>
             </section>
 
